@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<io.codetail.widget.RevealFrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".views.Welcome">
+
+    <FrameLayout
+        android:id="@+id/frame_content"
+        android:visibility="invisible"
+        android:background="@color/colorPrimaryDark"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/img_avatar"
+            android:visibility="visible"
+            android:contentDescription="@string/app_name"
+            android:src="@mipmap/ic_launcher"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_gravity="center" />
+        <View
+            android:id="@+id/view_point"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center" />
+    </FrameLayout>
+
+</io.codetail.widget.RevealFrameLayout>
